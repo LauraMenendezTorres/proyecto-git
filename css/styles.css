@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F9EEEC;
+    font-family:sans-serif;
+    height:100vh;
+}
+
+img{
+    width:100%;
+}
+
+/* Header index*/
+
+.titulo{
+display: none;  
+}
+
+/* Main index*/
+/* imagen principal */
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding:10px;
+}
+
+@media (min-width: 320px) and (max-width: 1000px){
+.unas-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    max-width: 1200px;
+    height: auto;
+    margin:auto;
+    padding:10px;
+}
+.winda{
+    font-size: 2em;
+    margin: 1rem;
+    padding: 1rem;
+    color:#545454;
+    text-align: center;
+}
+.cuidado{
+    font-size: 1em;
+    margin:1rem;
+    color: #545454;
+    background-color: #F9EEEC;
+    text-align: center;
+}
+.reserva{
+    color: #545454;
+    background-color: #F9EEEC;
+    font-size: 1em;
+}
+}
+
+@media (min-width:768px) and (max-width:1300px){
+    .unas-menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 70%;
+        max-width: 1200px;
+        height: auto;
+        margin:auto;
+        padding:10px;
+    }
+    .winda{
+        font-size: 2em;
+        margin: 1rem;
+        padding: 1rem;
+        color:#545454;
+        text-align: center;
+    }
+    .cuidado{
+        font-size: 1em;
+        margin:1rem;
+        color: #545454;
+        background-color: #F9EEEC;
+        text-align: center;
+    }
+    .reserva{
+        color: #545454;
+        background-color: #F9EEEC;
+        font-size: 1em;
+    }    
+}
+
+/* Sobre nosotras */
+h2{
+   margin:2rem;
+   font-size: 1,5em;
+    color: #545454;
+    background-color:#F9EEEC;
+}
+
+.nosotras{
+    color: #545454;
+    background-color: #F9EEEC;
+    font-size: 1em;
+    margin:1rem;
+    text-align: center;
+}
+
+/* Footer index*/
+.contacto-titulo{
+    padding:1rem;
+color: #545454;
+text-align: left;
+}
+
+footer div ul li{
+    margin:1,5rem;
+    padding:1,5rem;
+    font-size: 1em;
+    color: #545454;
+    list-style: none;
+}
+
+@media (min-width:768px) and (orientation: landscape){
+   footer div{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+   }
+   .contacto-titulo{
+    text-align:center;
+   }
+   }
+
+/* Galeria */
+.titulo-galeria{
+color:#545454;
+text-align: center;
+}
+
+.galeria{
+    padding:2rem;
+
+}
+
+.galeria img{
+    width: 95%;
+    height: 80%;
+    margin: 1rem;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) and (orientation:landscape){
+    .galeria{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2,60vh);
+    }
+}
+
+/* Productos */
+.productos{
+    color:#545454;
+    text-align: center;
+}
+
+/* Turnos */
+.name{
+    color: #545454;
+    padding:1rem;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.profesionales img{
+width:50%;
+height: 80%;
+}
+
