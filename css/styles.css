@@ -165,6 +165,22 @@ text-align: center;
     text-align: center;
 }
 
+/* Poductos unas */
+.unas-en-venta img{
+    width: 95%;
+    height: 80%;
+    margin: 1rem;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) and (orientation:landscape){
+    .unas-en-venta{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2,60vh);
+    }
+}
+
 /* Turnos */
 .name{
     color: #545454;
@@ -178,3 +194,7 @@ width:50%;
 height: 80%;
 }
 
+.fotos-profesionales{
+    width: 50%;
+    height: 50%;
+}
