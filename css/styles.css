@@ -10,9 +10,7 @@ body{
     height:100vh;
 }
 
-img{
-    width:100%;
-}
+
 
 /* Header index*/
 
@@ -20,32 +18,25 @@ img{
 display: none;  
 }
 
+
 /* Main index*/
 /* imagen principal */
 
+
 .contenedor{
-    width: 90%;
     max-width: 1200px;
-    margin: auto;
-    padding:10px;
+    height: 400px;
+    margin: 2rem;
+    background-image: url(../img/unas.jpg);
 }
 
-@media (min-width: 320px) and (max-width: 1000px){
-.unas-menu{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 70%;
-    max-width: 1200px;
-    height: auto;
-    margin:auto;
-    padding:10px;
-}
 .winda{
     font-size: 2em;
     margin: 1rem;
-    padding: 1rem;
+    padding-top: 200px;
     color:#545454;
     text-align: center;
+    font-weight: bold;
 }
 .cuidado{
     font-size: 1em;
@@ -59,12 +50,9 @@ display: none;
     background-color: #F9EEEC;
     font-size: 1em;
 }
-}
 
 @media (min-width:768px) and (max-width:1300px){
     .unas-menu{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
         width: 70%;
         max-width: 1200px;
         height: auto;
@@ -77,6 +65,7 @@ display: none;
         padding: 1rem;
         color:#545454;
         text-align: center;
+        font-weight: bold;
     }
     .cuidado{
         font-size: 1em;
@@ -155,7 +144,7 @@ text-align: center;
     .galeria{
         display:grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2,60vh);
+        grid-template-rows: repeat(3,70vh);
     }
 }
 
@@ -165,8 +154,29 @@ text-align: center;
     text-align: center;
 }
 
+.productos__estilo{
+    list-style: none;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.productos__fotos{
+   text-align: center;
+}
+
+@media (min-width:768px) and (orientation:landscape){
+    .productos__estilo{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
 /* Poductos unas */
-.unas-en-venta img{
+.unas-productos-titulo{
+    text-align: center;
+}
+
+.unas-venta__img{
     width: 95%;
     height: 80%;
     margin: 1rem;
@@ -174,27 +184,32 @@ text-align: center;
 }
 
 @media (min-width: 768px) and (orientation:landscape){
-    .unas-en-venta{
+    .unas-venta{
         display:grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2,60vh);
+        grid-template-rows: repeat(2,1fr);
     }
 }
 
 /* Turnos */
-.name{
+.profesionales__nombre{
     color: #545454;
     padding:1rem;
     text-align: left;
     font-size: 1.2rem;
 }
 
-.profesionales img{
-width:50%;
-height: 80%;
-}
-
-.fotos-profesionales{
+.profesionales__fotos{
     width: 50%;
     height: 50%;
+    margin:auto;
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) and (orientation:landscape){
+    .profesionales{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
 }
