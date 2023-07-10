@@ -1,0 +1,52 @@
+$color-principal: #545454;
+$color-secundario: #F9EEEC;
+$font: "Arima", cursive;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $color-secundario;
+}
+
+a{
+    text-decoration: none;
+}
+
+.titulo-principal{
+    display: none;  
+    }
+
+.nav-item{
+    font-family:$font;
+}
+
+button{
+    background-color: $color-secundario;
+    font-family:$font;
+}
+
+form{
+    font-family:$font;
+}
+
+/*Footer*/
+.contacto{
+    padding:1rem;
+color: $color-principal;
+text-align: left;
+font-family: $font;
+font-weight: 700;
+
+&__list{
+    margin:1,5rem;
+    padding:1,5rem;
+    font-size: 1em;
+    color: $color-principal;
+    font-family:$font;
+    list-style: none;
+}
+}    

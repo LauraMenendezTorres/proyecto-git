@@ -1,0 +1,41 @@
+.winda{
+    font-size: 2em;
+    margin: 1rem;
+    padding-top: 200px;
+    color:$color-principal;
+    text-align: center;
+    font-weight: 700;
+    font-family:$font;
+
+    &__cuidado{
+    font-size: 1em;
+    margin:1rem;
+    color: $color-principal;
+    background-color: $color-secundario;
+    text-align: center;
+    font-family:$font;
+
+    &__reserva{
+    color:$color-principal;
+    background-color: $color-secundario;    
+    }
+        }
+    }
+
+    .nosotras{
+     margin:2rem;
+   font-weight: 700;
+    color: $color-principal;
+    background-color:$color-secundario;
+    text-align:center;
+    font-family:$font;
+
+    &__texto{
+        color: $color-principal;
+        background-color: color-secundario;
+        font-size: 200;
+        margin:1rem;
+        text-align: center;
+        font-family:$font;
+    }
+    }
