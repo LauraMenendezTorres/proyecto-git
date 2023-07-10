@@ -1,0 +1,24 @@
+.turnos{
+    @include titulos;
+}
+
+.profesionales{
+    text-align: center;
+
+    &__nombre{
+        font-family: $font;
+        color:$color-principal;
+        padding:.5rem;
+    }
+    &__fotos{
+        padding:1rem
+    }
+}
+
+@media (min-width: 768px) and (orientation:landscape){
+    .profesionales{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+}

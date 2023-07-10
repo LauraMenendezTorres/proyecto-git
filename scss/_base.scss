@@ -1,6 +1,6 @@
 $color-principal: #545454;
 $color-secundario: #F9EEEC;
-$font: "Arima", cursive;
+$font: "Arima", serif;
 
 *{
     margin:0;
@@ -14,6 +14,10 @@ body{
 
 a{
     text-decoration: none;
+    color:$color-principal;
+    &:hover{
+        color:#F40196;
+    }
 }
 
 .titulo-principal{
@@ -25,12 +29,29 @@ a{
 }
 
 button{
+    color:$color-principal;
     background-color: $color-secundario;
     font-family:$font;
+    border-radius: 10px;
+    padding:15px 30px;
+    text-align:center;
+    margin:4px 2px;
+    font-weight: 700;
+    &:hover{
+    color:#F40196;
+    }
 }
 
 form{
     font-family:$font;
+} 
+
+@mixin titulos{
+    font-family: $font;
+    font-weight: 700;
+    color: $color-principal;
+    text-align: center;
+    padding:2rem;
 }
 
 /*Footer*/
@@ -49,4 +70,4 @@ font-weight: 700;
     font-family:$font;
     list-style: none;
 }
-}    
+}   

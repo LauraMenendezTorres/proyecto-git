@@ -10,6 +10,10 @@ body {
 
 a {
   text-decoration: none;
+  color: #545454;
+}
+a:hover {
+  color: #F40196;
 }
 
 .titulo-principal {
@@ -17,16 +21,25 @@ a {
 }
 
 .nav-item {
-  font-family: "Arima", cursive;
+  font-family: "Arima", serif;
 }
 
 button {
+  color: #545454;
   background-color: #F9EEEC;
-  font-family: "Arima", cursive;
+  font-family: "Arima", serif;
+  border-radius: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  margin: 4px 2px;
+  font-weight: 700;
+}
+button:hover {
+  color: #F40196;
 }
 
 form {
-  font-family: "Arima", cursive;
+  font-family: "Arima", serif;
 }
 
 /*Footer*/
@@ -34,7 +47,7 @@ form {
   padding: 1rem;
   color: #545454;
   text-align: left;
-  font-family: "Arima", cursive;
+  font-family: "Arima", serif;
   font-weight: 700;
 }
 .contacto__list {
@@ -42,7 +55,7 @@ form {
   padding: 1, 5rem;
   font-size: 1em;
   color: #545454;
-  font-family: "Arima", cursive;
+  font-family: "Arima", serif;
   list-style: none;
 }
 
@@ -53,6 +66,10 @@ form {
   background-image: url(../img/unas.jpg);
 }
 
+.contenedor {
+  text-align: center;
+}
+
 .winda {
   font-size: 2em;
   margin: 1rem;
@@ -60,7 +77,7 @@ form {
   color: #545454;
   text-align: center;
   font-weight: 700;
-  font-family: "Arima", cursive;
+  font-family: "Arima", serif;
 }
 .winda__cuidado {
   font-size: 1em;
@@ -68,7 +85,7 @@ form {
   color: #545454;
   background-color: #F9EEEC;
   text-align: center;
-  font-family: "Arima", cursive;
+  font-family: "Arima", serif;
 }
 .winda__cuidado__reserva {
   color: #545454;
@@ -81,7 +98,7 @@ form {
   color: #545454;
   background-color: #F9EEEC;
   text-align: center;
-  font-family: "Arima", cursive;
+  font-family: "Arima", serif;
 }
 .nosotras__texto {
   color: #545454;
@@ -89,7 +106,111 @@ form {
   font-size: 200;
   margin: 1rem;
   text-align: center;
-  font-family: "Arima", cursive;
+  font-family: "Arima", serif;
+}
+
+.galeria {
+  font-family: "Arima", serif;
+  font-weight: 700;
+  color: #545454;
+  text-align: center;
+  padding: 2rem;
+}
+.galeria__fotos {
+  padding: 1rem;
+  width: 50vh;
+  height: 70%;
+  margin: 1.5rem;
+  position: center;
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .galeria__contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 70vh);
+  }
+}
+.productos {
+  font-family: "Arima", serif;
+  font-weight: 700;
+  color: #545454;
+  text-align: center;
+  padding: 2rem;
+}
+.productos__estilo {
+  list-style: none;
+  font-weight: 700;
+  text-decoration: underline;
+  text-align: center;
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .productos__estilo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.unas-productos-titulo {
+  font-family: "Arima", serif;
+  font-weight: 700;
+  color: #545454;
+  text-align: center;
+  padding: 2rem;
+}
+
+.unas-venta {
+  text-align: center;
+}
+.unas-venta__img {
+  width: 95%;
+  height: 80%;
+  margin: 1rem;
+  object-fit: cover;
+}
+.unas-venta__nombre {
+  font-family: "Arima", serif;
+  font-weight: 200;
+  padding: 1rem;
+}
+.unas-venta__precio {
+  font-family: "Arima", serif;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .unas-venta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+.turnos {
+  font-family: "Arima", serif;
+  font-weight: 700;
+  color: #545454;
+  text-align: center;
+  padding: 2rem;
+}
+
+.profesionales {
+  text-align: center;
+}
+.profesionales__nombre {
+  font-family: "Arima", serif;
+  color: #545454;
+  padding: 0.5rem;
+}
+.profesionales__fotos {
+  padding: 1rem;
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .profesionales {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

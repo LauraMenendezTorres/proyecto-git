@@ -1,0 +1,17 @@
+.productos{
+    @include titulos;
+
+    &__estilo{
+        list-style: none;
+        font-weight: 700;
+        text-decoration: underline;
+        text-align: center;    
+    }
+}
+
+@media (min-width:768px) and (orientation:landscape){
+    .productos__estilo{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}

@@ -1,0 +1,19 @@
+.galeria{
+    @include titulos;
+
+    &__fotos{
+    padding:1rem;
+    width: 50vh;
+    height: 70%;
+    margin: 1.5rem;
+    position:center;
+    }
+}
+
+@media (min-width: 768px) and (orientation:landscape){
+    .galeria__contenedor{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3,70vh);
+    }
+}

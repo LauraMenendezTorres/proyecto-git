@@ -1,0 +1,32 @@
+.unas-productos-titulo{
+    @include titulos;
+}
+
+.unas-venta{
+    text-align: center;
+
+    &__img{
+        width: 95%;
+        height: 80%;
+        margin: 1rem;
+        object-fit: cover;  
+    }
+    &__nombre{
+        font-family: $font;
+        font-weight: 200;
+        padding:1rem;
+    
+        }
+    &__precio{
+        font-family: $font;
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 768px) and (orientation:landscape){
+    .unas-venta{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+}
