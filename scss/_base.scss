@@ -28,13 +28,16 @@ a{
     font-family:$font;
 }
 
+.winda-logo{
+max-width:130px;
+}
+
 button{
     color:$color-principal;
     background-color: $color-secundario;
     font-family:$font;
     border-radius: 10px;
     padding:15px 30px;
-    text-align:center;
     margin:4px 2px;
     font-weight: 700;
     &:hover{
@@ -53,21 +56,3 @@ form{
     text-align: center;
     padding:2rem;
 }
-
-/*Footer*/
-.contacto{
-    padding:1rem;
-color: $color-principal;
-text-align: left;
-font-family: $font;
-font-weight: 700;
-
-&__list{
-    margin:1,5rem;
-    padding:1,5rem;
-    font-size: 1em;
-    color: $color-principal;
-    font-family:$font;
-    list-style: none;
-}
-}   

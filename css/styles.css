@@ -24,13 +24,16 @@ a:hover {
   font-family: "Arima", serif;
 }
 
+.winda-logo {
+  max-width: 130px;
+}
+
 button {
   color: #545454;
   background-color: #F9EEEC;
   font-family: "Arima", serif;
   border-radius: 10px;
   padding: 15px 30px;
-  text-align: center;
   margin: 4px 2px;
   font-weight: 700;
 }
@@ -42,32 +45,13 @@ form {
   font-family: "Arima", serif;
 }
 
-/*Footer*/
-.contacto {
-  padding: 1rem;
-  color: #545454;
-  text-align: left;
-  font-family: "Arima", serif;
-  font-weight: 700;
-}
-.contacto__list {
-  margin: 1, 5rem;
-  padding: 1, 5rem;
-  font-size: 1em;
-  color: #545454;
-  font-family: "Arima", serif;
-  list-style: none;
-}
-
 .contenedor {
   max-width: 1200px;
   height: 400px;
   margin: 2rem;
   background-image: url(../img/unas.jpg);
-}
-
-.contenedor {
-  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .winda {
@@ -211,6 +195,38 @@ form {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+}
+.contacto, .redes {
+  padding: 0.3rem;
+  color: #545454;
+  text-align: center;
+  font-family: "Arima", serif;
+  font-size: 1rem;
+}
+.contacto__list, .redes__list {
+  padding: 0.2rem;
+  font-size: 0.7rem;
+  color: #545454;
+  font-family: "Arima", serif;
+  list-style: none;
+}
+
+.flex-contenedor {
+  border: 3px solid #545454;
+  display: flex;
+  justify-content: space-evenly;
+}
+.flex-contenedor__caja {
+  margin: 1rem;
+  text-align: center;
+}
+
+.redes__iconos {
+  padding: 0.6rem;
+}
+
+.contacto__iconos {
+  padding-right: 0.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
