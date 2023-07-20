@@ -9,9 +9,24 @@
         font-family: $font;
         color:$color-principal;
         padding:.5rem;
+        text-decoration: underline;
+        font-size: 1.5rem;
     }
     &__fotos{
-        padding:1rem
+        width:340px;
+        padding:1rem;
+        border: 3px solid $color-principal;
+        border-radius: 2.5rem;
+        margin:1rem;
+        display:flex;
+    }
+    &__btn{
+        margin-left: 1.5rem;
+        height: 60px;
+        font-size: .9rem;
+    }
+    img{
+        height:120px;
     }
 }
 

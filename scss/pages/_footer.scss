@@ -14,7 +14,8 @@ font-size: 1rem;
 }
 }   
 
-.flex-contenedor{
+.contenedor-footer{
+   margin-top: 4rem;
     border:3px solid $color-principal;
     display:flex;
     justify-content: space-evenly;
@@ -32,4 +33,12 @@ font-size: 1rem;
 
 .contacto__iconos{
     padding-right: .5rem;
+}
+
+@media (min-width:768px) and (orientation:landscape){
+    .contacto__list{
+        display:inline;
+        font-size: .9rem;
+        padding:1.3rem;
+    }
 }

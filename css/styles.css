@@ -52,6 +52,7 @@ form {
   background-image: url(../img/unas.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
 }
 
 .winda {
@@ -100,21 +101,16 @@ form {
   text-align: center;
   padding: 2rem;
 }
-.galeria__fotos {
-  padding: 1rem;
-  width: 50vh;
-  height: 70%;
-  margin: 1.5rem;
-  position: center;
+
+.galeria__contenedor img {
+  width: 100%;
+  padding: 16px;
 }
 
-@media (min-width: 768px) and (orientation: landscape) {
-  .galeria__contenedor {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 70vh);
-  }
+.galeria__contenedor {
+  display: flex;
 }
+
 .productos {
   font-family: "Arima", serif;
   font-weight: 700;
@@ -184,9 +180,24 @@ form {
   font-family: "Arima", serif;
   color: #545454;
   padding: 0.5rem;
+  text-decoration: underline;
+  font-size: 1.5rem;
 }
 .profesionales__fotos {
+  width: 340px;
   padding: 1rem;
+  border: 3px solid #545454;
+  border-radius: 2.5rem;
+  margin: 1rem;
+  display: flex;
+}
+.profesionales__btn {
+  margin-left: 1.5rem;
+  height: 60px;
+  font-size: 0.9rem;
+}
+.profesionales img {
+  height: 120px;
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
@@ -211,12 +222,13 @@ form {
   list-style: none;
 }
 
-.flex-contenedor {
+.contenedor-footer {
+  margin-top: 4rem;
   border: 3px solid #545454;
   display: flex;
   justify-content: space-evenly;
 }
-.flex-contenedor__caja {
+.contenedor-footer__caja {
   margin: 1rem;
   text-align: center;
 }
@@ -227,6 +239,14 @@ form {
 
 .contacto__iconos {
   padding-right: 0.5rem;
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .contacto__list {
+    display: inline;
+    font-size: 0.9rem;
+    padding: 1.3rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
