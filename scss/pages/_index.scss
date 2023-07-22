@@ -23,6 +23,7 @@
     }
 
     .nosotras{
+    padding-top:4rem;
      margin:2rem;
    font-weight: 700;
     color: $color-principal;
@@ -34,7 +35,9 @@
         color: $color-principal;
         background-color: color-secundario;
         font-size: 200;
-        margin:1rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-bottom: 4rem;
         text-align: center;
         font-family:$font;
     }

@@ -45,16 +45,6 @@ form {
   font-family: "Arima", serif;
 }
 
-.breadcrumb {
-  font-family: "Arima", serif;
-  padding-top: 0.5rem;
-  padding-left: 1rem;
-}
-
-p {
-  font-family: "Arima", serif;
-}
-
 .contenedor {
   max-width: 1200px;
   height: 400px;
@@ -88,7 +78,6 @@ p {
 }
 
 .nosotras {
-  padding-top: 4rem;
   margin: 2rem;
   font-weight: 700;
   color: #545454;
@@ -100,9 +89,7 @@ p {
   color: #545454;
   background-color: color-secundario;
   font-size: 200;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: 4rem;
+  margin: 1rem;
   text-align: center;
   font-family: "Arima", serif;
 }
@@ -116,12 +103,13 @@ p {
 }
 .galeria__fotos {
   border-radius: 2.5rem;
-  max-width: 400px;
 }
+
 .galeria__contenedor img {
   width: 100%;
   padding: 16px;
 }
+
 .galeria__contenedor {
   display: flex;
 }
@@ -150,15 +138,6 @@ video {
   text-decoration: underline;
   text-align: center;
 }
-.productos__fotos img {
-  border-radius: 3rem;
-  cursor: pointer;
-  margin-bottom: 2rem;
-}
-.productos__fotos img:hover {
-  transform: scale(1.2);
-  transition: 2s;
-}
 
 @media (min-width: 768px) and (orientation: landscape) {
   .productos__estilo {
@@ -177,36 +156,27 @@ video {
 .unas-venta {
   text-align: center;
 }
-.unas-venta__contenedor {
+.unas-venta__img {
   width: 95%;
   height: 80%;
-  margin-bottom: 3rem;
+  margin: 1rem;
   object-fit: cover;
 }
 .unas-venta__nombre {
   font-family: "Arima", serif;
+  font-weight: 200;
   padding: 1rem;
-  color: #545454;
 }
 .unas-venta__precio {
   font-family: "Arima", serif;
   font-weight: 700;
-  color: #545454;
-}
-.unas-venta__img {
-  border-radius: 2rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) and (orientation: landscape) {
   .unas-venta {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 768px) {
-  .unas-venta {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 .turnos {
@@ -306,18 +276,5 @@ video {
     padding: 1.3rem;
   }
 }
-.descuento {
-  height: 450px;
-  background-image: url(/img/descuento.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.descuento__input {
-  text-align: center;
-  margin: 0.3rem;
-}
-.descuento__input-nombre {
-  padding-top: 260px;
-}
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles-css.map */

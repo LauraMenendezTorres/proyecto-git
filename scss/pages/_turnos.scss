@@ -3,7 +3,8 @@
 }
 
 .profesionales{
-    text-align: center;
+    display:grid;
+    justify-items: center;
 
     &__nombre{
         font-family: $font;
@@ -11,6 +12,7 @@
         padding:.5rem;
         text-decoration: underline;
         font-size: 1.5rem;
+        text-align: center;
     }
     &__fotos{
         width:340px;
@@ -27,13 +29,21 @@
     }
     img{
         height:120px;
+        border-radius: .7rem;
     }
 }
 
 @media (min-width: 768px) and (orientation:landscape){
     .profesionales{
         display:grid;
+        justify-items: center;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2,1fr);
     }
+}
+
+.descuento-titulo{
+    @include titulos;
+    text-decoration:solid underline;
+    padding-top: 4rem;
 }

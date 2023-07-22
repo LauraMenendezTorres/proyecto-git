@@ -5,28 +5,38 @@
 .unas-venta{
     text-align: center;
 
-    &__img{
+    &__contenedor{
         width: 95%;
         height: 80%;
-        margin: 1rem;
+        margin-bottom: 3rem;
         object-fit: cover;  
     }
     &__nombre{
         font-family: $font;
-        font-weight: 200;
         padding:1rem;
+        color:$color-principal;
     
         }
     &__precio{
         font-family: $font;
         font-weight: 700;
+        color:$color-principal
+    }
+    &__img{
+        border-radius: 2rem;
     }
 }
 
-@media (min-width: 768px) and (orientation:landscape){
+@media (min-width:576px){
     .unas-venta{
-        display:grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2,1fr);
-    }
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (min-width:768px){
+    .unas-venta{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 }

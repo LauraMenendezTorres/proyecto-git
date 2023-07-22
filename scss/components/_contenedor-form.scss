@@ -1,0 +1,13 @@
+.descuento{
+    height:450px;
+    background-image: url(/img/descuento.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    &__input{
+       text-align: center;
+       margin:.3rem;
+       &-nombre{
+        padding-top: 260px;
+       }
+    }
+}
