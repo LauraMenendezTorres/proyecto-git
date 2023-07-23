@@ -6,7 +6,7 @@
 
 Este es mi primer proyecto de desarrollo web, realizado como proyecto final para el curso de desarrollo web de CODERHOUSE. "Winda Nails" es una página web para una empresa que se dedica a realizar manicura.
 
-##Tecnologías Utilizadas
+## Tecnologías Utilizadas
 HTML5
 CSS
 Boostrap 5.1
