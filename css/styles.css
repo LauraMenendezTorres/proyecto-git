@@ -56,7 +56,6 @@ p {
 }
 
 .contenedor {
-  max-width: 1200px;
   height: 400px;
   margin: 2rem;
   background-image: url(../img/unas.jpg);
@@ -308,7 +307,7 @@ video {
 }
 .descuento {
   height: 450px;
-  background-image: url(/img/descuento.jpeg);
+  background-image: url(/img/descuentow.webp);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -318,6 +317,11 @@ video {
 }
 .descuento__input-nombre {
   padding-top: 260px;
+}
+
+.boton-enviar {
+  color: #545454;
+  background-color: #F9EEEC;
 }
 
 /*# sourceMappingURL=styles.css.map */

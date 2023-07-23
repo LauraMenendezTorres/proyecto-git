@@ -1,6 +1,6 @@
 .descuento{
     height:450px;
-    background-image: url(/img/descuento.jpeg);
+    background-image: url(/img/descuentow.webp);
     background-repeat: no-repeat;
     background-position: center;
     &__input{
@@ -10,4 +10,9 @@
         padding-top: 260px;
        }
     }
+}
+
+.boton-enviar{
+    color:$color-principal;
+    background-color: $color-secundario;
 }
