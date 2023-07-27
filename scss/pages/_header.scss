@@ -1,0 +1,21 @@
+.nav-item{
+    font-family:$font;
+    border-radius: .8rem;
+    margin: 1px;
+   &:hover{
+background:$color-secundario
+   } 
+}
+
+.winda-logo{
+max-width:130px;
+}
+
+.btn-outline-success{
+   color:$color-principal;
+   background-color: $color-secundario;
+   border-color: $color-principal;
+   &:hover{
+      background:#F40196;
+   }
+}

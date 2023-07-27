@@ -20,14 +20,6 @@ a:hover {
   display: none;
 }
 
-.nav-item {
-  font-family: "Arima", serif;
-}
-
-.winda-logo {
-  max-width: 130px;
-}
-
 button {
   color: #545454;
   background-color: #F9EEEC;
@@ -322,6 +314,28 @@ video {
 .boton-enviar {
   color: #545454;
   background-color: #F9EEEC;
+}
+
+.nav-item {
+  font-family: "Arima", serif;
+  border-radius: 0.8rem;
+  margin: 1px;
+}
+.nav-item:hover {
+  background: #F9EEEC;
+}
+
+.winda-logo {
+  max-width: 130px;
+}
+
+.btn-outline-success {
+  color: #545454;
+  background-color: #F9EEEC;
+  border-color: #545454;
+}
+.btn-outline-success:hover {
+  background: #F40196;
 }
 
 /*# sourceMappingURL=styles.css.map */
