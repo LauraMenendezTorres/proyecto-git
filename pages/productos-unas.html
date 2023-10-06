@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -37,7 +39,17 @@
               <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
           </nav>
-          <button class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+         <!--  <button class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i></button> -->
+         <div class="dropdown">
+          <a href="#" class="btn btn-outline-secondary dropdown-toggle" id="carritoDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-shopping-cart"></i> (0)
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="carritoDropdown" id="carritoMenu">
+
+          </ul>
+          <div id="carritoTotal"></div>
+      </div>
         </div>
       </header>
 
@@ -52,51 +64,161 @@
 <main>
 
 <h2 class="unas-productos-titulo">Productos - Uñas</h2>
+ 
+ <!--  <div class="container">
+  <div class="row">
+      <div class="col-md-4 mb-4">
+          <div class="card">
+              <img src="../img/brillos-uno.jpg" class="card-img-top" alt="esmalte de brillos">
+              <div class="card-body">
+                  <h5 class="card-title">Brillos para uñas</h5>
+                  <p class="card-text">$1000</p>
+                  <button class="btn btn-primary"><i class="fas fa-cart-shopping"></i></button>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="card">
+              <img src="../img/fuor.jpg" class="card-img-top" alt="esmalte color fluor">
+              <div class="card-body">
+                  <h5 class="card-title">Esmalte fluor</h5>
+                  <p class="card-text">$500</p>
+                  <button class="btn btn-primary"><i class="fas fa-cart-shopping"></i></button>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="card">
+              <img src="../img/kit-dos.jpg" class="card-img-top" alt="kit de manicura">
+              <div class="card-body">
+                  <h5 class="card-title">Kit de manicura</h5>
+                  <p class="card-text">$5200</p>
+                  <button class="btn btn-primary"><i class="fas fa-cart-shopping"></i></button>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="card">
+              <img src="../img/esmalte-uno.jpg" class="card-img-top" alt="esmalte">
+              <div class="card-body">
+                  <h5 class="card-title">Esmalte</h5>
+                  <p class="card-text">$600 c/u</p>
+                  <button class="btn btn-primary"><i class="fas fa-cart-shopping"></i></button>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="card">
+              <img src="../img/kit-uno.jpg" class="card-img-top" alt="kit de manicura">
+              <div class="card-body">
+                  <h5 class="card-title">Kit de manicura</h5>
+                  <p class="card-text">$6000</p>
+                  <button class="btn btn-primary"><i class="fas fa-cart-shopping"></i></button>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="card">
+              <img src="../img/kit-tres.jpg" class="card-img-top" alt="kit de manicura">
+              <div class="card-body">
+                  <h5 class="card-title">Kit de manicura</h5>
+                  <p class="card-text">$6200</p>
+                  <button class="btn btn-primary"><i class="fas fa-cart-shopping"></i></button>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="card">
+              <img src="../img/esmalte-dos.jpg" class="card-img-top" alt="esmalte">
+              <div class="card-body">
+                  <h5 class="card-title">Esmalte</h5>
+                  <p class="card-text">$700 c/u</p>
+                  <button class="btn btn-primary"><i class="fas fa-cart-shopping"></i></button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>  -->
 
-<div class="unas-venta">
-<section class="unas-venta__contenedor">
-<img class="unas-venta__img" src="../img/brillos-uno.jpg" alt="esmalte de brillos">
-<h3 class="unas-venta__nombre">Brillos para uñas</h3>
-<span class="unas-venta__precio">$1000</span>
-<button><i class="fa-solid fa-cart-shopping"></i></button>
-</section>
-<section class="unas-venta__contenedor">
-  <img class="unas-venta__img" src="../img/fuor.jpg" alt="esmalte color fluor">
-  <h3 class="unas-venta__nombre">Esmalte fluor</h3>
-  <span class="unas-venta__precio">$500</span>
-  <button><i class="fa-solid fa-cart-shopping"></i></button>
-  </section>
-  <section class="unas-venta__contenedor">
-    <img class="unas-venta__img" src="../img/kit-dos.jpg" alt="kit de manicura">
-    <h3 class="unas-venta__nombre">Kit de manicura</h3>
-    <span class="unas-venta__precio">$5200</span>
-    <button><i class="fa-solid fa-cart-shopping"></i></button>
-  </section>
-    <section class="unas-venta__contenedor">
-      <img class="unas-venta__img" src="../img/esmalte-uno.jpg" alt="esmalte">
-      <h3 class="unas-venta__nombre">Esmalte</h3>
-      <span class="unas-venta__precio">$600 c/u</span>
-      <button><i class="fa-solid fa-cart-shopping"></i></button>
-      </section>
-      <section class="unas-venta__contenedor">
-        <img class="unas-venta__img" src="../img/kit-uno.jpg" alt="kit de manicura">
-        <h3 class="unas-venta__nombre">Kit de manicura</h3>
-        <span class="unas-venta__precio">$6000</span>
-        <button><i class="fa-solid fa-cart-shopping"></i></button>
-        </d>
-        <section class="unas-venta__contenedor">
-          <img class="unas-venta__img" src="../img/kit-tres.jpg" alt="kit de manicura">
-          <h3 class="unas-venta__nombre">Kit de manicura</h3>
-          <span class="unas-venta__precio">$6200</span>
-          <button><i class="fa-solid fa-cart-shopping"></i></button>
-          </sec>
-          <section class="unas-venta__contenedor">
-            <img class="unas-venta__img" src="../img/esmalte-dos.jpg" alt="esmalte">
-            <h3 class="unas-venta__nombre">Esmalte</h3>
-            <span class="unas-venta__precio">$700 c/u</span>
-            <button><i class="fa-solid fa-cart-shopping"></i></button>
-            </section>
-          </div>  
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="../img/brillos-uno.jpg" class="card-img-top" alt="esmalte de brillos">
+          <div class="card-body">
+            <h5 class="card-title">Brillos para uñas</h5>
+            <p class="card-text">$1000</p>
+            <button class="btn btn-primary btnAgregar" data-id="1"><i class="fas fa-cart-shopping"></i> Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="../img/fuor.jpg" class="card-img-top" alt="esmalte color fluor">
+          <div class="card-body">
+            <h5 class="card-title">Esmalte fluor</h5>
+            <p class="card-text">$500</p>
+            <button class="btn btn-primary btnAgregar" data-id="2"><i class="fas fa-cart-shopping"></i> Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="../img/kit-dos.jpg" class="card-img-top" alt="kit de manicura">
+          <div class="card-body">
+            <h5 class="card-title">Kit de manicura 1</h5>
+            <p class="card-text">$5200</p>
+            <button class="btn btn-primary btnAgregar" data-id="3"><i class="fas fa-cart-shopping"></i> Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="../img/esmalte-uno.jpg" class="card-img-top" alt="esmalte">
+          <div class="card-body">
+            <h5 class="card-title">Esmalte</h5>
+            <p class="card-text">$600 c/u</p>
+            <button class="btn btn-primary btnAgregar" data-id="4"><i class="fas fa-cart-shopping"></i> Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="../img/kit-uno.jpg" class="card-img-top" alt="kit de manicura">
+          <div class="card-body">
+            <h5 class="card-title">Kit de manicura 2</h5>
+            <p class="card-text">$6000</p>
+            <button class="btn btn-primary btnAgregar" data-id="5"><i class="fas fa-cart-shopping"></i> Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="../img/kit-tres.jpg" class="card-img-top" alt="kit de manicura">
+          <div class="card-body">
+            <h5 class="card-title">Kit de manicura 3</h5>
+            <p class="card-text">$6200</p>
+            <button class="btn btn-primary btnAgregar" data-id="6"><i class="fas fa-cart-shopping"></i> Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="../img/esmalte-dos.jpg" class="card-img-top" alt="esmalte">
+          <div class="card-body">
+            <h5 class="card-title">Esmalte 2</h5>
+            <p class="card-text">$700 c/u</p>
+            <button class="btn btn-primary btnAgregar" data-id="7"><i class="fas fa-cart-shopping"></i> Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+
+
+
 
 </main> 
 
@@ -116,7 +238,10 @@
     <a href="https://www.tiktok.com/@isamenendez0?_t=8dxgeq4fmeT&_r=1" target="_blank"><i class="fa-brands fa-tiktok redes__iconos"></i></a>
   </div>
 </footer>
-<script src="/carrito.js"></script>
+<script src="../carrito.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+crossorigin="anonymous"></script>
 </body>
 </html>
